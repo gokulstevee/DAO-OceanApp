@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.6;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
@@ -250,6 +250,7 @@ contract DAO is ReentrancyGuard, AccessControl {
         );
     }
 
+    //returns each proposals in array implicitly since the returns parameter contains it's name
     function getProposals()
         public
         view
@@ -264,8 +265,8 @@ contract DAO is ReentrancyGuard, AccessControl {
 
     //all the functions below can only be called by an EOA and not internally by other contract functions
 
-    //getting all proposals
-    function getProposals(
+    //getting proposal by ID
+    function getProposal(
         uint256 proposalId
     ) external view returns (ProposalStruct memory) {
         return raisedProposals[proposalId];
