@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import ProposalDetails from '../components/ProposalDetails';
+import Voters from '../components/Voters';
 
 const Proposal = () => {
   return (
-    <div>Proposal</div>
-  )
-}
+    <>
+      <ProposalDetails />
+      <Voters />
+    </>
+  );
+};
 
-export default Proposal
+export default Proposal;
