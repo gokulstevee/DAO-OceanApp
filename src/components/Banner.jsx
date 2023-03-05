@@ -48,10 +48,10 @@ const Banner = () => {
       <p>
         Current DAO Balance: <strong>{balance} Eth</strong>
         <br />
-        Your contributions:
+        Your contributions:{' '}
         <span>
           <strong>{myBalance} Eth</strong>
-          {isStakeholder ? ',and you are now a stakeholder' : null}
+          {isStakeholder ? '  ,and you are now a stakeholder' : null}
         </span>
       </p>
       <hr className="my-6 border-gray-300 dark:border-gray-500" />

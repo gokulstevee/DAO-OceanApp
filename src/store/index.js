@@ -1,4 +1,4 @@
-const { max } = require('moment');
+const moment = require('moment');
 const { createGlobalState } = require('react-hooks-global-state');
 
 //useGlobalState: a custom hook works like React.useState
@@ -19,7 +19,7 @@ const truncate = (text, startChars, endChars, maxLength) => {
   if (text.length > maxLength) {
     let start = text.substring(0, startChars);
     let end = text.substring(text.length - endChars, text.length);
-    while (start.length + end.length < max.length) {
+    while (start.length + end.length < maxLength) {
       start = start + '.';
     }
     return start + end;
@@ -27,10 +27,9 @@ const truncate = (text, startChars, endChars, maxLength) => {
   return text;
 };
 
-const daysRemaining = () => {
+const daysRemaining = (days) => {
   const todaysDate = moment();
   days = Number((days + '000').slice(0));
-  console.log('days' + days);
   days = moment(days).format('YYYY-MM-DD');
   days = moment(days);
   days = days.diff(todaysDate, 'days');

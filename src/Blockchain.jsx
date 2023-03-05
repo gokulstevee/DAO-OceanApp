@@ -59,7 +59,7 @@ const getEthereumContract = () => {
     const web3 = window.web3;
     const contract = new web3.eth.Contract(
       abi.abi,
-      '0x5FbDB2315678afecb367f032d93F642f64180aa3'
+      '0x0165878A594ca255338adfa4d48449f69242Eb8F'
     );
     //returns contract object
     return contract;
@@ -105,14 +105,14 @@ const getInfo = async () => {
     const balance = await contract.methods.daoBalance().call({ from: account });
 
     //fetcing current user balance
-    const myBalance = await contract.method
+    const myBalance = await contract.methods
       .getBalance()
       .call({ from: account });
 
     //setting variables to the global storage
     setGlobalState('balance', window.web3.utils.fromWei(balance));
     setGlobalState('myBalance', window.web3.utils.fromWei(myBalance));
-    setGlobalState('isStakeholder', window.web3.utils.fromWei(isStakeholder));
+    setGlobalState('isStakeholder', isStakeholder);
   } catch (error) {
     reportError(error);
   }
@@ -125,11 +125,12 @@ const raiseProposal = async ({ title, description, beneficiary, amount }) => {
     const account = getGlobalState('connectedAccount');
 
     //creating proposal with the user provided data
-    await contract.methods
+    const proposalCreated = await contract.methods
       .createProposal(title, description, beneficiary, amount)
       .send({ from: account });
 
-    window.location.reload();
+    // window.location.reload();
+    console.log('Proposal Created' + JSON.stringify(proposalCreated));
   } catch (error) {
     reportError(error);
   }

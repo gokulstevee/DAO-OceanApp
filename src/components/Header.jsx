@@ -15,9 +15,7 @@ const Header = () => {
     // setting the theme color toggling functionality in localstorage
     //as given in tailwind-css docs
     const root = window.document.documentElement;
-    console.log(themeColor);
     root.classList.remove(themeColor);
-    console.log(themeColor);
     root.classList.add(theme);
     localStorage.setItem('theme', theme);
   }, [themeColor, theme]);

@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 contract DAO is ReentrancyGuard, AccessControl {
     bytes32 private immutable CONTRIBUTOR_ROLE = keccak256("CONTRIBUTOR");
     bytes32 private immutable STAKEHOLDER_ROLE = keccak256("STAKEHOLDER");
+    uint public timeNow = block.timestamp;
 
     uint256 immutable MIN_STAKEHOLDER_CONTRIBUTION = 1 ether;
     uint32 immutable MIN_VOTE_DURATION = 10 minutes;
@@ -60,6 +61,14 @@ contract DAO is ReentrancyGuard, AccessControl {
         address indexed beneficiary,
         uint256 amount
     );
+    event EventAction(
+        address indexed initiator,
+        bytes32 role,
+        string message,
+        address indexed beneficiary,
+        uint256 amount,
+        uint256 duration
+    );
 
     modifier stakeholderOnly(string memory message) {
         require(hasRole(STAKEHOLDER_ROLE, msg.sender), message);
@@ -91,12 +100,13 @@ contract DAO is ReentrancyGuard, AccessControl {
         proposal.amount = amount;
         proposal.duration = block.timestamp + MIN_VOTE_DURATION;
 
-        emit Action(
+        emit EventAction(
             msg.sender,
             STAKEHOLDER_ROLE,
             "PROPOSAL RAISED",
             beneficiary,
-            amount
+            amount,
+            proposal.duration
         );
     }
 

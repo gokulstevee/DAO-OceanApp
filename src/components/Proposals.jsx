@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { payoutBeneficiary } from '../Blockchain';
 import { daysRemaining, truncate, useGlobalState } from '../store';
@@ -23,8 +23,13 @@ const Proposals = () => {
   transition duration-150 ease-in-out overflow-hidden
   border border-blue-600`;
 
+  useEffect(() => {
+    getAll();
+  }, [data]);
   //getAll() will return both active proposals and closed proposals
   const getAll = () => setProposals(data);
+  console.log(data);
+  console.log(new Date().getTime());
 
   //getOpened() will return the proposals which are opened
   const getOpened = () => {
@@ -199,3 +204,5 @@ const Proposals = () => {
 };
 
 export default Proposals;
+
+//1678006140

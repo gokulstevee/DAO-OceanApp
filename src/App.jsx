@@ -14,7 +14,6 @@ const App = () => {
     getInfo();
     getProposals();
     setLoaded(true);
-    console.log('loaded: ' + loaded);
   }, []);
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-[#212936] dark:text-gray-300">
