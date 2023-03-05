@@ -1,6 +1,10 @@
 const { max } = require('moment');
 const { createGlobalState } = require('react-hooks-global-state');
 
+//useGlobalState: a custom hook works like React.useState
+//getGlobalState: a function to get a global state by key outside React
+//setGlobalState: a function to set a global state by key outside React
+
 const { setGlobalState, useGlobalState, getGlobalState } = createGlobalState({
   createModal: 'scale-0',
   connectedAccount: '',

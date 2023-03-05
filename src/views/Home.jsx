@@ -1,13 +1,15 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import CreateProposal from '../components/CreateProposal';
-import Proposal from './Proposal';
+import Proposals from '../components/Proposals';
 
 const Home = () => {
   return (
     <>
       <Banner />
-      <Proposal />
+      <Proposals />
+      {/* when raise proposal button is clicked globalState will set the css property 
+      for creating MODAL by changing the "scale-0" to "scale-100" tailwind-css class and becomes visible in DOM flow*/}
       <CreateProposal />
     </>
   );

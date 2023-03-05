@@ -5,6 +5,7 @@ import { useGlobalState, setGlobalState } from '../store';
 
 const Banner = () => {
   const [isStakeholder] = useGlobalState('isStakeholder');
+  // const [isStakeholder] = useState(true);
   const [proposals] = useGlobalState('proposals');
   const [balance] = useGlobalState('balance');
   const [myBalance] = useGlobalState('myBalance');
@@ -12,14 +13,17 @@ const Banner = () => {
 
   const onPropose = () => {
     if (!isStakeholder) return;
-    //it creates a Modal UI for creating proposal
+
+    //it creates a Modal UI for creating proposal, setGlobalState changes
+    //from "scale-0" to"scale-100" and this "scale-100" is used in a tailwind-css class as css
+    //"scale-1" property
     setGlobalState('createModal', 'scale-100');
   };
 
   //onContribute function performs contribution
   const onContribute = async () => {
     if (!!!amount || amount == '' || amount == 0) {
-      toast.warning('Not sufficient amount');
+      toast.warning('Enter atleast some amount');
       return;
     }
     await performContribute(amount).then(() =>
@@ -53,8 +57,8 @@ const Banner = () => {
       <hr className="my-6 border-gray-300 dark:border-gray-500" />
       <p>
         {isStakeholder
-          ? 'You can now raise proposals on this platform'
-          : 'Hey, when you contribute upto 1 Eth you become a stakeholder'}
+          ? 'Congrats! Yor are a Proposer, now you can raise proposals on this platform'
+          : 'Hey! when you contribute upto 1 Eth you become a stakeholder'}
       </p>
       <div className="flex flex-row justify-start items-center md:w-1/3 w-full mt-4">
         <input
@@ -104,7 +108,9 @@ const Banner = () => {
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
             onClick={onPropose}
-          ></button>
+          >
+            Propose
+          </button>
         ) : null}
       </div>
     </div>
