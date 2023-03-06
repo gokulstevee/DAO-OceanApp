@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# DAO Ocean App
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+1. It's Proposal creation and contributing platform, where candiates can vote for the proposal and if the proposal got the max vote than the ether will transfer to beneficiary
