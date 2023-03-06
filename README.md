@@ -24,6 +24,8 @@
 
 5. If a proposal got max upVotes than the beneficiary will get paid and if max downVotes than the proposal will get rejected.
 
+6. This platform can be toggled between **Night mode** or **Light mode** by Tailwind-css theme
+
 ![Contract Deployment](https://user-images.githubusercontent.com/65470058/223112974-3ed91ca3-4983-4def-8869-f75e345cbdb6.png)
 ### Contract Deployment
 
