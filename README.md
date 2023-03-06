@@ -27,7 +27,7 @@
 ![Contract Deployment](https://user-images.githubusercontent.com/65470058/223112974-3ed91ca3-4983-4def-8869-f75e345cbdb6.png)
 ### Contract Deployment
 
-[Contributing](https://user-images.githubusercontent.com/65470058/223118163-16a409d0-2368-44c5-aa57-1e4077a55802.png)
+![Contributing](https://user-images.githubusercontent.com/65470058/223118163-16a409d0-2368-44c5-aa57-1e4077a55802.png)
 ### Contributing to the platform!
 
 ![Creating proposal](https://user-images.githubusercontent.com/65470058/223117289-c68b7305-d288-4f23-8a5e-2035aca52a4d.png)
