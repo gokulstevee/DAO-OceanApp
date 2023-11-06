@@ -26,33 +26,30 @@
 
 6. This platform can be toggled between **Night mode** or **Light mode** by Tailwind-css theme
 
-![Contract Deployment](https://user-images.githubusercontent.com/65470058/223112974-3ed91ca3-4983-4def-8869-f75e345cbdb6.png)
 ### Contract Deployment
+![Contract Deployment](https://user-images.githubusercontent.com/65470058/223112974-3ed91ca3-4983-4def-8869-f75e345cbdb6.png)
 
-![Contributing](https://user-images.githubusercontent.com/65470058/223118163-16a409d0-2368-44c5-aa57-1e4077a55802.png)
 ### Contributing to the platform!
+![Contributing](https://user-images.githubusercontent.com/65470058/223118163-16a409d0-2368-44c5-aa57-1e4077a55802.png)
 
-![Creating proposal](https://user-images.githubusercontent.com/65470058/223117289-c68b7305-d288-4f23-8a5e-2035aca52a4d.png)
 ### Creating proposal
+![Creating proposal](https://user-images.githubusercontent.com/65470058/223117289-c68b7305-d288-4f23-8a5e-2035aca52a4d.png)
 
-![Proposal created](https://user-images.githubusercontent.com/65470058/223117556-a25e1a51-6b49-42ed-9673-91f1ba9033ce.png)
 ### Proposal created
+![Proposal created](https://user-images.githubusercontent.com/65470058/223117556-a25e1a51-6b49-42ed-9673-91f1ba9033ce.png)
 
-![Proposal View](https://user-images.githubusercontent.com/65470058/223118586-f86a1a38-aaff-4f74-aeac-72775a4f232b.png)
 ### Viewing proposal and deciding to accept it or to reject
+![Proposal View](https://user-images.githubusercontent.com/65470058/223118586-f86a1a38-aaff-4f74-aeac-72775a4f232b.png)
 
 
-![Paying bebeficiary](https://user-images.githubusercontent.com/65470058/223118893-4037ef1f-7832-468a-8b30-2f269cb15f5f.png)
 ### Paying to beneficiary after getting max vote
+![Paying bebeficiary](https://user-images.githubusercontent.com/65470058/223118893-4037ef1f-7832-468a-8b30-2f269cb15f5f.png)
 
-![Paid beneficiary](https://user-images.githubusercontent.com/65470058/223119119-584e162d-d21e-46f6-8f78-33a52e64cd3d.png)
 ### Paid beneficiary
+![Paid beneficiary](https://user-images.githubusercontent.com/65470058/223119119-584e162d-d21e-46f6-8f78-33a52e64cd3d.png)
 
-![Confirmation](https://user-images.githubusercontent.com/65470058/223119386-4b92f845-bad2-4634-bd84-6d61b5b4bdba.png)
 ### Confirmation
+![Confirmation](https://user-images.githubusercontent.com/65470058/223119386-4b92f845-bad2-4634-bd84-6d61b5b4bdba.png)
 
-![Rejected Proposal](https://user-images.githubusercontent.com/65470058/223120409-5518ede7-e3dd-4c92-a922-f01e82cca5dc.png)
 ### Rejected proposal
-
-
-
+![Rejected Proposal](https://user-images.githubusercontent.com/65470058/223120409-5518ede7-e3dd-4c92-a922-f01e82cca5dc.png)
